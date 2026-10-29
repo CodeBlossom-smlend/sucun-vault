@@ -1,0 +1,24 @@
+appId: app.sucun.vault
+productName: 速存
+asar: true
+directories:
+  output: release
+files:
+  - dist/**
+  - dist-electron/**
+  - assets/**
+  - windows-generated/**
+  - package.json
+mac:
+  icon: assets/icon.png
+  category: public.app-category.productivity
+  target:
+    - dmg
+    - zip
+win:
+  icon: assets/icon.ico
+  target:
+    - nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
